@@ -37,7 +37,7 @@ public class CountriesRepositoryTest {
 
 		log.info("Testing Mysql JPA repository findById feature");
 
-		Integer countryId = 169;
+		Integer countryId = 168;
 		Optional<CountryEntity> countryOpt = mongoRepository.findById(countryId);
 
 		if (countryOpt.isPresent()) {
