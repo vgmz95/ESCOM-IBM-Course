@@ -75,7 +75,7 @@ public CountryEntity SaveNewCountry(CountryEntity country) {
 }
 
 ```
-La ruta para guardar un país quedó definida como
+La ruta para guardar un país quedó definida como:
 ``` java 
 @PostMapping(path = "/api/countries/country/")
 public ResponseEntity<CountryEntity> saveCountry(@RequestBody CountryEntity country) {
@@ -83,6 +83,8 @@ public ResponseEntity<CountryEntity> saveCountry(@RequestBody CountryEntity coun
       countriesService.SaveNewCountry(country), HttpStatus.OK);
 }  
 ```
+
+![POST request](/img/API-POST-Country.png)
 
 
 
