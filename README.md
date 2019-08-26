@@ -1,7 +1,7 @@
 # ESCOM-IBM-Course
 Curso Spring microservicios
 
-## Spring Data (16 de Ago de 2019)
+## Spring Data (23 de Ago de 2019)
 Se realizarons los siguientes cambios:
 - Buscar paises por el nombre del continente usando una base de datos (MySQL)
 - Buscar por ID de país
