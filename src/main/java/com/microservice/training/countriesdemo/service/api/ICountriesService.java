@@ -8,8 +8,6 @@ public interface ICountriesService {
   List<CountryEntity> findCountriesByContinentName(String continentName);
   CountryEntity findByCountryId(Integer countryId);  
   List<CountryEntity> findCountriesByContinentId(Integer continentId);
-  CountryEntity SaveNewCountry(CountryEntity country); 
-  
-  
+  CountryEntity SaveNewCountry(CountryEntity country);  
   
 }

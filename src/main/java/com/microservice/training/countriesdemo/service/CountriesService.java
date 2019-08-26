@@ -23,11 +23,8 @@ public class CountriesService implements ICountriesService {
 		Continent continent = Continent.continentByName(continentName);
 		switch (continent) {
 		case EUROPE:
-			return countriesRepository.findByContinent(continent.getContinentName());
 		case ASIA:
-			return countriesRepository.findByContinent(continent.getContinentName());
 		case AFRICA:
-			return countriesRepository.findByContinent(continent.getContinentName());
 		case NORTH_AMERICA:
 			return countriesRepository.findByContinent(continent.getContinentName());
 		default:
@@ -50,14 +47,8 @@ public class CountriesService implements ICountriesService {
 		Continent continent = Continent.continentByName(country.getContinent());
 		switch (continent) {
 		case EUROPE:
-			countriesRepository.save(country);
-			break;
 		case ASIA:
-			countriesRepository.save(country);
-			break;
 		case AFRICA:
-			countriesRepository.save(country);
-			break;
 		case NORTH_AMERICA:
 			countriesRepository.save(country);
 			break;
@@ -69,7 +60,7 @@ public class CountriesService implements ICountriesService {
 	}
 	
 	public List<CountryEntity> findCountriesByContinentId(Integer continentId) {
-		throw new UnsupportedOperationException("");
+		throw new UnsupportedOperationException("Not implemented yet");
 		/*
 		 * Continent continent = Continent.continentById(continentId); switch
 		 * (continent) { case EUROPE: return
